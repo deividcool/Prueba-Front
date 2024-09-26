@@ -23,7 +23,7 @@ const Sidebar = () => {
   return (
     <div>
       <button 
-        className="lg:hidden fixed top-4 left-4 z-50 p-2 bg-gray-800 text-white rounded-md"
+        className="lg:hidden fixed top-4 left-4 z-50 p-2  text-white rounded-md"
         onClick={toggleSidebar}
       >
         {isOpen ? <CloseSvg className="w-6 h-6" /> : <MenuSvg className="w-6 h-6" />}
@@ -34,7 +34,7 @@ const Sidebar = () => {
           isOpen ? 'translate-x-0' : '-translate-x-full'
         } lg:translate-x-0`}
       >
-        <h2 className="text-2xl font-bold mb-6">
+        <h2 className="text-2xl font-bold mb-6 mt-6">
           Colombia Dashboard
           <ColombiaSvg className="inline-block w-6 h-6 ml-2" />
         </h2>

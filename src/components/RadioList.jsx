@@ -48,8 +48,8 @@ const RadioList = () => {
       {loading ? (
         <Loading />
       ) : (
-        <section className="flex h-full overflow-y-auto">
-          <ul className="bg-white p-4 rounded shadow h-3/4 overflow-y-auto w-1/2">
+        <section className="flex h-full overflow-y-auto flex-col sm:flex-row">
+           <ul className="bg-white p-4 rounded shadow sm:h-3/4 overflow-y-auto sm:w-1/2 w-full min-h-[300px]" >
             {filteredradio.map((radio) => (
               <li
                 key={radio.id}
@@ -60,7 +60,7 @@ const RadioList = () => {
               </li>
             ))}
           </ul>
-          <div className="ml-4 w-1/2">
+          <div className="sm:ml-4 sm:w-1/2">
             {selectedradio && (
               <div className="flex flex-col p-4 bg-gray-100 rounded shadow gap-4">
                 <h2 className="flex text-xl font-bold">{selectedradio.name}</h2>
@@ -80,7 +80,6 @@ const RadioList = () => {
                     : "No hay información disponible"}
                 </p>
                 <p className="flex">
-                  {" "}
                   {selectedradio.city.description
                     ? selectedradio.city.description
                     : "No hay información disponible"}

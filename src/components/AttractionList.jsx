@@ -47,8 +47,8 @@ const AttractionList = () => {
       {loading ? (
         <Loading />
       ) : (
-        <section className="flex h-full overflow-y-auto">
-          <ul className="bg-white p-4 rounded shadow h-3/4 overflow-y-auto w-1/2">
+        <section className="flex h-full overflow-y-auto flex-col sm:flex-row">
+          <ul className="bg-white p-4 rounded shadow h-[250px] sm:h-3/4 overflow-y-auto w-full sm:w-1/2">
             {filteredattraction.map(attraction => (
               <li 
                 key={attraction.id} 
@@ -59,7 +59,7 @@ const AttractionList = () => {
               </li>
             ))}
           </ul>
-          <div className="ml-4 w-1/2">
+          <div className="sm:ml-4 sm:w-1/2">
             {selectedAttraction && (
               <div className="flex flex-col p-4 bg-gray-100 rounded shadow gap-4">
                 <h2 className="flex text-xl font-bold">{selectedAttraction.name}</h2>

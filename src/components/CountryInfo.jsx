@@ -15,7 +15,7 @@ const CountryInfo = () => {
     <article>
       <h1 className="text-2xl font-bold mb-4">Información General de Colombia</h1>
       {country ? (
-        <section className="flex flex-row bg-white p-4 rounded shadow">
+        <section className="flex flex-col sm:flex-row bg-white p-4 rounded shadow">
           <div className='flex flex-1 flex-col gap-4 text-pretty px-5'>
             <p><strong>Nombre:</strong> {country.name}</p>
             <p><strong>Capital:</strong> {country.description}</p>

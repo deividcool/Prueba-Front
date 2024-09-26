@@ -46,8 +46,8 @@ const CityList = () => {
       {loading ? (
         <Loading />
       ) : (
-        <section className="flex h-full overflow-y-auto">
-          <ul className="bg-white p-4 rounded shadow h-3/4 overflow-y-auto w-1/2">
+        <section className="flex h-full overflow-y-auto flex-col sm:flex-row">
+          <ul className="bg-white p-4 rounded shadow h-[250px] sm:h-3/4 overflow-y-auto  w-full sm:w-1/2">
             {filteredcity.map(city => (
               <li 
                 key={city.id} 
@@ -58,7 +58,7 @@ const CityList = () => {
               </li>
             ))}
           </ul>
-          <div className="ml-4 w-1/2">
+          <div className="sm:ml-4 sm:w-1/2">
             {selectedcity && (
               <div className="p-4 bg-gray-100 rounded shadow">
                 <h2 className="text-xl font-bold">{selectedcity.name}</h2>

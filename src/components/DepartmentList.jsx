@@ -46,8 +46,8 @@ const DepartmentList = () => {
       {loading ? (
         <Loading />
       ) : (
-        <section className="flex h-full overflow-y-auto">
-          <ul className="bg-white p-4 rounded shadow h-3/4 overflow-y-auto w-1/2">
+        <section className="flex h-full overflow-y-auto flex-col sm:flex-row">
+          <ul className="bg-white p-4 rounded shadow h-3/4 overflow-y-auto sm:w-1/2">
             {filteredDepartments.map(department => (
               <li 
                 key={department.id} 
@@ -58,7 +58,7 @@ const DepartmentList = () => {
               </li>
             ))}
           </ul>
-          <div className="ml-4 w-1/2 h-3/4 ">
+          <div className="sm:ml-4 w-full sm:w-1/2 h-3/4 ">
             {selectedDepartment && (
               <div className="p-4 bg-gray-100 rounded shadow">
                 <h2 className="text-xl font-bold">{selectedDepartment.name}</h2>

@@ -31,8 +31,8 @@ Sigue estos pasos para ejecutar la aplicación localmente:
    ```bash
    git clone https://github.com/tu_usuario/dashboard-app.git
    cd Prueba-Front
-
-    installa dependencies
+  ```
+    instalar dependencias
    ``bash
    npm install
    ```

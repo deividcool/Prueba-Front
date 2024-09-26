@@ -50,7 +50,7 @@ function Register() {
         ) : (
           <form onSubmit={handleSubmit} className='flex-1 flex flex-col items-center justify-evenly w-full'>
             <input
-              type="email"
+              type="text"
               placeholder="Email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}

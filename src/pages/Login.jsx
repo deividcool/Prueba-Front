@@ -30,6 +30,11 @@ function Login() {
     }
   };
 
+  const handleRegister = async () => {
+    navigate('/register');
+  };
+
+
   return (
     <main className='flex flex-col items-center justify-center h-screen dark:bg-gray-900'>
        <section className='flex flex-col items-center justify-around w-[350px] h-80 bg-gray-200 rounded-lg py-2 px-5 shadow-2xl sm:w-[450px] sm:py-4'>
@@ -52,7 +57,9 @@ function Login() {
                 />
                 <button type="submit" className='flex px-8 py-2 rounded-lg bg-pretty text-white bg-purple-900 uppercase font-semibold'>Login</button>
             </form>
-            <a href="/register" className='flex w-full items-start justify-end text-cyan-600'>registrese ahora</a>
+            <button onClick={handleRegister} className='flex w-full items-start justify-end text-cyan-600'>
+              registrese ahora
+            </button>
         </section>
     </main>
   );

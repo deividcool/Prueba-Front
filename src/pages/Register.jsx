@@ -39,7 +39,7 @@ function Register() {
         {error && <p style={{ color: 'red' }}>{error}</p>}
         {success ? (
           <div className='flex flex-col items-center justify-center'>
-            <p>Registro exitoso, revisa tu correo para confirmar tu cuenta.</p>
+            <p>Registro exitoso</p>
             <button 
               onClick={handleLogin} 
               className='mt-4 px-8 py-2 rounded-lg bg-pretty text-white bg-purple-900 uppercase font-semibold'

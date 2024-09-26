@@ -1,0 +1,12 @@
+.department-item {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    opacity: 0; /* Comienza invisible */
+    transform: translateX(-20px); /* Comienza desplazado a la izquierda */
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Transiciones */
+  }
+  
+  .department-item.slide-in {
+    opacity: 1; /* Aparece visible */
+    transform: translateX(0); /* Se mueve a su posición original */
+  }

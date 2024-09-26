@@ -40,3 +40,8 @@ Sigue estos pasos para ejecutar la aplicación localmente:
    ejecutar el proyecto
    ```
    npm run dev
+   ```
+
+link proyecto subido en produccion
+
+ https://prueba-front-pied.vercel.app/
